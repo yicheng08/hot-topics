@@ -1,0 +1,307 @@
+/* 
+color：
+green-blue: DARK #0F5050, LIGHT: #0D8483, grey: #bdd1d0
+light: #F5F4EC;
+black: #404040;
+*/
+
+
+/**General**/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Merriweather', Georgia, 'Times New Roman';
+    color: #0F5050;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial;
+    color: #404040;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+
+/* nav */
+
+
+header img {
+    width: 5rem;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+header h2 {
+    text-align: center;
+}
+
+nav {
+    text-align: Left;
+    margin-top: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav li {
+    display: block;
+    margin: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #0D8483;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F5F4EC;
+}
+
+.masthead {
+    background-image: url(../img/bg.jpeg);
+    background-position: 25% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #849934;
+    height: auto;
+    width: 100%;
+    display: none;
+}
+
+.masthead h3 {
+    color: #bdd1d0;
+    font-size: 1.4rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+/*  content  */
+#dynamic-content img {
+    width: 100%;
+}
+
+
+/* potfolio */
+.title {
+    text-align: center;
+}
+
+.cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.card {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card figcaption {
+    text-align: center;
+    padding: 1rem;
+    color: #0F5050;
+    font-size: 1rem;
+}
+
+
+
+
+main {
+    width: 80%;
+    margin: 7rem auto 3rem auto;
+    max-width: 110rem;
+}
+
+footer {
+    width: 80%;
+    margin: 2rem auto 2rem auto;
+    max-width: 110rem;
+}
+
+hr {
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    color: #0D8483;
+    margin-bottom: 0;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media i {
+    color: #0D8483;
+    margin: 1rem;
+}
+
+footer small {
+    color: #979696;
+}
+
+#contact-footer {
+    text-align: center;
+}
+
+@media only screen and (min-width: 35rem) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    header h2 {
+        display: none;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    nav li {
+        border: 1px solid #e0e0e0;
+        padding: 0.5rem 1.5rem;
+        width: 45%;
+    }
+
+    nav li:first-child {
+        margin-right: 0.5rem;
+    }
+
+    nav li:nth-child(2) {
+        margin-left: 0.5rem;
+    }
+
+    .flex-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .masthead {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        display: block;
+    }
+
+    .masthead {
+        background-position: 30% 35%;
+        background-size: cover;
+    }
+
+    .masthead h3 {
+        text-align: center;
+        padding: 10%;
+        margin: 0 auto;
+    }
+
+
+    /* Content */
+
+    #dynamic-content {
+        margin-top: 2rem;
+    }
+
+    #dynamic-content img {
+        width: 40%;
+        float: left;
+        margin: 0.5rem 2rem 1rem 0;
+
+    }
+
+    /* portfolio */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+hr {
+    clear: both;
+}
+
+
+@media only screen and (min-width: 80rem) {
+
+    body {
+        font-size: 1.25rem;
+    }
+    
+    .inline-nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .flex-nav {
+        margin: auto;
+    }
+
+    .inline-nav img {
+        margin-left: 0;
+        margin-right: 1rem;
+        align-self: center;
+        height: 6rem;
+        width: auto;
+    }
+
+    .inline-nav li {
+        width: 7rem;
+        margin: 0 1rem;
+        align-self: center;
+    }
+
+
+    .masthead h3 {
+        text-align: Left;
+        padding: 5% 10%;
+    }
+
+    /* content */
+    #dynamic-content h2 {
+        text-align: left;
+    }
+
+    .wrapper p {
+        overflow: hidden;
+    }
+
+    /* portfolio */
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /*  footer  */
+    #contact-footer {
+        text-align: left;
+    }
+
+    .social-media i:first-child {
+        margin-left: 0;
+    }
+
+}
